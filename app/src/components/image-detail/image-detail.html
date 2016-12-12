@@ -1,5 +1,6 @@
 <span ng-class="$ctrl.style.detail">
     {{$ctrl.image.title}}
-    <p><a href="{{$ctrl.image.url}}">{{$ctrl.image.title}}</a></p>
+    <p><a href="{{$ctrl.image.url}}"><img ng-src={{$ctrl.image.url}}></a></p>
+    <p>{{$ctrl.image.title}}</p>
     <p>{{$ctrl.image.description}}</p>
 </span>

@@ -1,8 +1,9 @@
 import angular from 'angular';
 import galleryService from './gallery-service';
 
-angular.module('services', [])
-  .factory('galleryService', galleryService);
+const module = angular.module('services', []);
 
+module.factory('galleryService', galleryService);
 
 export default module.name;
+

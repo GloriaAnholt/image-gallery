@@ -3,7 +3,8 @@ import style from './image-detail.css';
 
 export default {
   bindings: {
-    image: '<'
+    image: '=',
+    view: '@'
   },
   controller,
   template
@@ -11,4 +12,5 @@ export default {
 
 function controller() {
   this.style = style;
+  this.view = '';
 }
